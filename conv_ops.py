@@ -74,7 +74,7 @@ w_out = floor(((w_in + 2 * p - w_filt) / s) + 1)
 
 #Calculate total number of additions, multiplications, and divisions
 muls = n_filt * h_out * w_out * c_in * h_filt * w_filt
-adds = (n_filt - 1) * h_out * w_out * c_in * h_filt * w_filt
+adds = n_filt * h_out * w_out * c_in * h_filt * w_filt
 divs = 0 #Zero for standard convolutions
 
 #Print output to the screen
